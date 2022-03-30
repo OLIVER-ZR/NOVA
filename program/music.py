@@ -58,7 +58,7 @@ async def play(c: Client, m: Message):
         [
             [
                 InlineKeyboardButton(text="⌯ قائمه تحكم ⌯", callback_data="cbmenu"),
-                InlineKeyboardButton(text="⌯ اغــلاق ⌯, callback_data="cls"),
+                InlineKeyboardButton(text="⌯ اغــلاق ⌯", callback_data="cls"),
                 ],
               [InlineKeyboardButton("⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"),
                 ],

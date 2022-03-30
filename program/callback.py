@@ -43,7 +43,7 @@ async def cbstart(_, query: CallbackQuery):
                         "⌯ جروب البوت ⌯", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "⌯ قناة البوت ⌯", url=f"https://t.me/{UPDATES_CHANNEL}
+                        "⌯ قناة البوت ⌯", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [

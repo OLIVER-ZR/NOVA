@@ -54,37 +54,38 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
-🤖 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
-** يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال المكالمات الجديدة في Telegram! **
-💡 ** اضفني مشرف مع صلاحيه اضافه مستخدمين واكتب انضم و اكتشف جميع أوامر البوت وكيفية عملها من خلال النقر على زر »📚🎮 الأوامر🎮 او اكتب الاوامر !**
-🔖 ** لمعرفة كيفية استخدام هذا البوت ، يرجى النقر فوق » زر 🔮طريقة الاستخدام🔮! يوزر الحساب المساعد  @{ASSISTANT_NAME} **
-⚡𝐏𝐑𝐎𝐆𝐑𝐀𝐌𝐌𝐄𝐑 **[ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧](https://t.me/{OWNER_NAME}) **
+🤖 **[𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶](https://t.me/SO_SELVA) **
+**⌯ انا بوت  استطيع تشغيل الموسيقي والفيديو في محادثتك الصوتية**
+
+⌯ تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 📚 اوامر التشغيل !
+
+⌯ لتعلم طريقة تشغيلي بمجموعتك اضغط علي » ❓طريقة التفعيل !
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✅اضغط لأضافه البوت لمجموعتك✅",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        "⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯",
+                        url=f"https://t.me/SO_SELVA",
                     )
                 ],
-                [InlineKeyboardButton("🔮طــريــقــة الاســتخــدام🔮", callback_data="cbhowtouse")],
-                [InlineKeyboardButton("🌀الاوامــر الكامله المعربــه🌀", callback_data="cbvamp")],                 
+                [InlineKeyboardButton("⌯  ❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")],                 
                 [
-                    InlineKeyboardButton("🎮الاوامــــر🎮", callback_data="cbcmds"),
-                    InlineKeyboardButton("👨🏼‍💻الــمــطــور👨🏼‍💻", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("⌯ 📚 اوامر التشغيل ⌯ ", callback_data="cbcmds"),
+                    InlineKeyboardButton("⌯ الــمــطــور ⌯", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎙جــروب الــدعـم🎙", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "⌯ جروب البوت ⌯", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "⌯ قناة البوت ⌯", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧", url="https://t.me/XxlllllllllllllllllllllllllllxX"
+                        "⌯ اضافه البوت اللي مجموعتك ⌯", url="https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
             ]
@@ -103,35 +104,51 @@ async def alive(client: Client, message: Message):
 
     keyboard = InlineKeyboardMarkup(
             [
-                [
+               [
+                InlineKeyboardButton("• تيمو •", url=f"https://t.me/tt_t_4"),
+                InlineKeyboardButton("• ليدو •", url=f"https://t.me/J0KER7x"),
+            ],
+                [       
                     InlineKeyboardButton(
-                        "ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧",
-                        url=f"https://t.me/XxlllllllllllllllllllllllllllxX",
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🎙جــروب الــدعـم🎙", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🎧اضافه البوت اللي مجموعتك🎧", url="https://t.me/{BOT_USERNAME}?startgroup=true"
+                        "⌯ اضافه البوت اللي مجموعتك ⌯", url="https://t.me/{BOT_USERNAME}?startgroup=true"
                 ),
             ]
         ]
     ) 
 
-    alive = f"**مرحبآ  {message.from_user.mention()}, انا {BOT_NAME}**\n\n✨ البوت يعمل بشكل طبيعي\n👨🏼‍💻المبرمج : [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ اصدار Bot : `v{__version__}`\n🍀 اصدار Pyrogram : `{pyrover}`\n✨ اصدار Python: `{__python_version__}`\n🍀 اصدار PyTgCalls : `{pytover.__version__}`\n✨ وقت التشغيل: `{uptime}`\n\n**شكرًا لإضافتي هنا ، لتشغيل الفيديو والموسيقى على دردشة الفيديو الخاصة بمجموعتك ** ❤"
+    alive = f"**⌯ اهلا بك يا  {message.from_user.mention()}   \n ⌯ في سورس سيلفا ميوزك 🎵 الجمدان ❤️ \n ⌯ لو عايز تنصيب بوت ميوزك بأسعار حلوة  كلمنا  من هنا ⬇️ ** "
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
         caption=alive,
         reply_markup=keyboard,
     )
+
+
+@Client.on_message(command(["لمطور", "طور"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/10bfc5e7d6ab441832a65.jpg",
+        caption=f"""**⌯ مطورين سورس سيلفا ميوزك 🎵**""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("𓆩 آݪــمــبــرمــج تيمو 𓆪", url=f"https://t.me/tt_t_4"),
+            ],
+            [
+                InlineKeyboardButton("𓆩 آݪــمــبــرمــج ݪــيدو 𓆪", url=f"https://t.me/J0KER7x"),
+            ],
+            [
+                InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+         ]
+     )
+  )
 
 
 @Client.on_message(command(["ping", "يست", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
@@ -152,3 +169,66 @@ async def get_uptime(client: Client, message: Message):
         f"• **uptime:** `{uptime}`\n"
         f"• **start time:** `{START_TIME_ISO}`"
     )
+
+
+@Client.on_chat_join_request()
+async def approve_join_chat(c: Client, m: ChatJoinRequest):
+    if not m.from_user:
+        return
+    try:
+        await c.approve_chat_join_request(m.chat.id, m.from_user.id)
+    except FloodWait as e:
+        await asyncio.sleep(e.x + 2)
+        await c.approve_chat_join_request(m.chat.id, m.from_user.id)
+
+
+@Client.on_message(filters.new_chat_members)
+async def new_chat(c: Client, m: Message):
+    chat_id = m.chat.id
+    if await is_served_chat(chat_id):
+        pass
+    else:
+        await add_served_chat(chat_id)
+    ass_uname = (await user.get_me()).username
+    bot_id = (await c.get_me()).id
+    for member in m.new_chat_members:
+        if member.id == bot_id:
+            return await m.reply(
+                "**شكرا  لإضافتي إلى مجموعتك 🖤**\n**[𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶](https://t.me/SO_SELVA) **\n"
+                "قم بترقيتي كمسؤول عن المجموعة لكي أتمكن من العمل بشكل صحيح\nولا تنسى كتابة `/انضم` لدعوة الحساب المساعد\nقم بكتابة`/تحديث` لتحديث قائمة المشرفين",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("⌯ قناة البوت ⌯", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("⌯ جروب البوت ⌯", url=f"https://t.me/{GROUP_SUPPORT}")
+                        ],
+                        [
+                            InlineKeyboardButton("⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                        "⌯ اضافه البوت اللي مجموعتك ⌯",
+                        url=f'https://t.me/{BOT_USERNAME}?startgroup=true'),
+                        ],
+                    ]
+                )
+            )
+
+
+chat_watcher_group = 5
+
+@Client.on_message(group=chat_watcher_group)
+async def chat_watcher_func(_, message: Message):
+    try:
+        userid = message.from_user.id
+    except Exception:
+        return
+    suspect = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
+    if await is_gbanned_user(userid):
+        try:
+            await message.chat.ban_member(userid)
+        except Exception:
+            return
+        await message.reply_text(
+            f"👮🏼 (> {suspect} <)\n\n**Gbanned** user detected, that user has been gbanned by sudo user and was blocked from this Chat !\n\n🚫 **Reason:** potential spammer and abuser."
+        )

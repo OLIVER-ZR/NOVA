@@ -170,3 +170,38 @@ async def get_uptime(client: Client, message: Message):
         f"• **start time:** `{START_TIME_ISO}`"
     )
 
+
+@Client.on_message(filters.new_chat_members)
+async def new_chat(c: Client, m: Message):
+    chat_id = m.chat.id
+    if await is_served_chat(chat_id):
+        pass
+    else:
+        await add_served_chat(chat_id)
+    ass_uname = (await user.get_me()).username
+    bot_id = (await c.get_me()).id
+    for member in m.new_chat_members:
+        if member.id == bot_id:
+            return await m.reply(
+                "**شكرا  لإضافتي إلى مجموعتك 🖤**\n**[𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶](https://t.me/SO_SELVA) **\n"
+                "قم بترقيتي كمسؤول عن المجموعة لكي أتمكن من العمل بشكل صحيح\nولا تنسى كتابة `/انضم` لدعوة الحساب المساعد\nقم بكتابة`/تحديث` لتحديث قائمة المشرفين",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("⌯ قناة البوت ⌯", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("⌯ جروب البوت ⌯", url=f"https://t.me/{GROUP_SUPPORT}")
+                        ],
+                        [
+                            InlineKeyboardButton("⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                        "⌯ اضافه البوت اللي مجموعتك ⌯",
+                        url=f'https://t.me/{BOT_USERNAME}?startgroup=true'),
+                        ],
+                    ]
+                )
+            )
+
+
+chat_watcher_group = 5

@@ -87,7 +87,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » **⇦ قم بالضغط علي الزر الذي تريده لمعرفه الاوامر  !**
 
-⌯ قناة سورس سيلفا ميوزك 🎵  @SO_SELVA  __""",
+⚡ __قناة البوت»  @{UPDATES_CHANNEL}  __""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

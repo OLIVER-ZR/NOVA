@@ -151,7 +151,7 @@ async def help(client: Client, message: Message):
   )
 
 
-@Client.on_message(command(["ping", "يست", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ping", "ينج", "يست", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")

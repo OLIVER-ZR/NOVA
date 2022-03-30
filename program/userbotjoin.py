@@ -8,7 +8,7 @@ from pyrogram.errors import UserAlreadyParticipant
 
 
 @Client.on_message(
-    command(["userbotjoin","شغيل","انضم","نضم", f"userbotjoin@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
+    command(["userbotjoin","شغيل","انضم","نضم","غل" f"userbotjoin@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
 )
 @authorized_users_only
 @errors
@@ -34,8 +34,7 @@ async def join_group(client, message):
     except Exception as e:
         print(e)
         await message.reply_text(     
-            f"🚨برجاء التاكد من عدم حظر الحساب المساعد في المجموعه  🚨 \n\n** او ربما لم يتمكن حساب المساعد من الانضمام إلى مجموعتك بسبب كثرة طلبات الانضمام **"
-            "\n\n**أو تواصل مع المطور @XxlllllllllllllllllllllllllllxX او أضف مساعدًا  @XxVPlllllllllxX يدويًا إلى مجموعتك وحاول مرة أخرى**",
+            f"**🚨 تاكد من رفع البوت مشرف مجموعتك 🚨**",
         )
         return
     await message.reply_text(

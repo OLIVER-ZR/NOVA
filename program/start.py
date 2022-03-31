@@ -69,7 +69,7 @@ async def start_(client: Client, message: Message):
                         url=f"https://t.me/SO_SELVA",
                     )
                 ],
-                [InlineKeyboardButton("⌯  ❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("⌯❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
                 [InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")],                 
                 [
                     InlineKeyboardButton("⌯ 📚 اوامر التشغيل ⌯ ", callback_data="cbcmds"),

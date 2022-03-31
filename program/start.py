@@ -151,6 +151,29 @@ async def help(client: Client, message: Message):
   )
 
 
+@Client.on_message(command(["وامراغاني", f"وامر", f"لاوامراغاني", f"لاوامر", f"اغاني", f"غاني"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/10bfc5e7d6ab441832a65.jpg",
+        caption=f"""**⌯ ها هي الاوامر  الكامله بالعربي ⌯ \n\n✦┅━╍━╍╍━━╍━━╍━┅✦\n⌯ تشغيل + 「اسم الأغنية او / رابط」تشغيل الصوت  mp3\n\n⌯ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .\n\n⌯ فيديو + لينك +  » » تشغيل فيديو مباشر من يوتيوب .\n\n⌯ ايقاف او انهاء » »  لايقاف التشغيل .\n\n✦┅━╍━╍╍━━╍━━╍━┅✦**""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("𓆩 آݪــمــبــرمــج تيمو 𓆪", url=f"https://t.me/tt_t_4"),
+                InlineKeyboardButton("𓆩 آݪــمــبــرمــج ݪــيدو 𓆪", url=f"https://t.me/J0KER7x"),
+            ],
+            [
+                InlineKeyboardButton(
+                    "⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"
+                ),
+            ],
+            [
+                InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+         ]
+     )
+  )
+
 @Client.on_message(command(["ping", "ينج", "يست", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
@@ -172,22 +195,4 @@ async def get_uptime(client: Client, message: Message):
 
 
 
-@Client.on_message(command(["وامراغاني", "اوامراغاني", "اوامراغاني", "غاني", "لاوامر"]) & filters.group & ~filters.edited)
-async def help(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/10bfc5e7d6ab441832a65.jpg",
-        caption=f"""**⌯ ها هي الاوامر  الكامله بالعربي ⌯ \n\n✦┅━╍━╍╍━━╍━━╍━┅✦\n⌯ تشغيل + 「اسم الأغنية او / رابط」تشغيل الصوت  mp3\n\n⌯ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .\n\n⌯ فيديو + لينك +  » » تشغيل فيديو مباشر من يوتيوب .\n\n⌯ ايقاف او انهاء » »  لايقاف التشغيل .\n\n✦┅━╍━╍╍━━╍━━╍━┅✦**""",
-        reply_markup=InlineKeyboardMarkup(
-         [
-            [
-                InlineKeyboardButton("𓆩 آݪــمــبــرمــج تيمو 𓆪", url=f"https://t.me/tt_t_4"),
-            ],
-            [
-                InlineKeyboardButton("𓆩 آݪــمــبــرمــج ݪــيدو 𓆪", url=f"https://t.me/J0KER7x"),
-            ],
-            [
-                InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-            ]
-         ]
-     )
-  )
+

@@ -235,7 +235,7 @@ async def vplay(c: Client, m: Message):
                                 )
                             except Exception as ep:
                                 await loser.delete()
-                                await m.reply_text(f"🚫 error قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر عنه @XxVPlllllllllxX : `{ep}`")
+                                await m.reply_text(f"🚫 error قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر عنه : `{ep}`")
 
     else:
         if len(m.command) < 2:
@@ -290,7 +290,7 @@ async def vplay(c: Client, m: Message):
                             )
                         except Exception as ep:
                             await loser.delete()
-                            await m.reply_text(f"🚫 خطاء قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر عنه @XxVPlllllllllxX : `{ep}`")
+                            await m.reply_text(f"🚫 خطاء قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر عنه : `{ep}`")
 
 
 @Client.on_message(command(["vstream", "يديو", f"vstream@{BOT_USERNAME}"]) & other_filters)
@@ -433,4 +433,4 @@ async def vstream(c: Client, m: Message):
                     )
                 except Exception as ep:
                     await loser.delete()
-                    await m.reply_text(f"🚫 خطاء قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر لكي اعمل @XxVPlllllllllxX : `{ep}`")
+                    await m.reply_text(f"🚫 خطاء قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر لكي اعمل : `{ep}`")

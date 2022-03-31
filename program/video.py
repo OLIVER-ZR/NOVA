@@ -63,13 +63,12 @@ async def vplay(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="●↯التـحـكــم↯●", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🗑اغــلاق●", callback_data="cls"),
+                InlineKeyboardButton(text="⌯ قائمه تحكم ⌯", callback_data="cbmenu"),
+                InlineKeyboardButton(text="⌯ اغــلاق ⌯", callback_data="cls"),
               ],
-              [InlineKeyboardButton("ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸", url=f"t.me/XxlllllllllllllllllllllllllllxX"),
-              InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"t.me/XxvprxX"),
+              [InlineKeyboardButton("⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"),
                 ],
-              [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/VPllllllbot?startgroup=new"),              
+              [InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),              
             ]
         ]
     )
@@ -294,20 +293,19 @@ async def vplay(c: Client, m: Message):
                             await m.reply_text(f"🚫 خطاء قام احد مشرفي المجموعه بحظر الحساب المساعد برجاء رفع الحظر عنه @XxVPlllllllllxX : `{ep}`")
 
 
-@Client.on_message(command(["vstream", "ديو", f"vstream@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["vstream", "يديو", f"vstream@{BOT_USERNAME}"]) & other_filters)
 async def vstream(c: Client, m: Message):
     m.reply_to_message
     chat_id = m.chat.id
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="●↯التـحـكــم↯●", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🗑اغــلاق●", callback_data="cls"),
+                InlineKeyboardButton(text="⌯ قائمه تحكم ⌯", callback_data="cbmenu"),
+                InlineKeyboardButton(text="⌯ اغــلاق ⌯", callback_data="cls"),
               ],
-              [InlineKeyboardButton("ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸", url=f"t.me/XxlllllllllllllllllllllllllllxX"),
-              InlineKeyboardButton("𝐒𝐎𝐔𝐑𝐂𝐄🌀", url=f"t.me/XxvprxX"),
+              [InlineKeyboardButton("⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"),
               ],
-              [InlineKeyboardButton("🎧اضافه البوت اللي مجموعتك🎧", url=f"http://t.me/VPllllllbot?startgroup=new"),               
+              [InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),               
             ]
         ]
     )

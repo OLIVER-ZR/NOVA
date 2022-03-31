@@ -161,8 +161,8 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("𓆩 آݪــمــبــرمــج تيمو 𓆪", url=f"https://t.me/tt_t_4"),
-                InlineKeyboardButton("𓆩 آݪــمــبــرمــج ليدو 𓆪", url=f"https://t.me/J0KER7x"),
+                InlineKeyboardButton("𓆩 آݪــمــطور تيمو 𓆪", url=f"https://t.me/tt_t_4"),
+                InlineKeyboardButton("𓆩 آݪــمــطور ليدو 𓆪", url=f"https://t.me/J0KER7x"),
             ],
             [
                 InlineKeyboardButton(

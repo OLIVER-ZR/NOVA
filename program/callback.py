@@ -87,14 +87,14 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-» **⇦قم بالضغط علي الزر الذي تريده لمعرفه الاوامر لكل فئه منهم !**
+» **⇦ قم بالضغط علي الزر الذي تريده لمعرفه الاوامر  !**
 
-⚡ __قناة البوت»  @{UPDATES_CHANNEL}  __""",
+⌯ __قناة سورس سيلفا ميوزك 🎵  @SO_SELVA  __""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("⌯  الاوامر بالانجليزي ⌯", callback_data="cbadmin"),
-                    InlineKeyboardButton("👨🏼‍💻اوامــر المطــور👨🏼‍💻", callback_data="cbsudo"),
+                    InlineKeyboardButton("⌯ اوامــر المطــور ⌯", callback_data="cbsudo"),
                 ],[
                     InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")                    
                 ],[
@@ -130,7 +130,7 @@ __""",
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""  »
+        f"""  
  ⌯ ها هي الأوامر بالانجليزي ⌯
 
 ✦┅━╍━╍╍━━╍━━╍━┅✦
@@ -165,16 +165,18 @@ __""",
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the sudo commands:
+        f"""⌯ ها هي الاوامر  للمطور ⌯
 
+✦┅━╍━╍╍━━╍━━╍━┅✦
 » /rmw  »او «مسح- clean all raw files
 » /rmd  » او «تنظيف- clean all downloaded files
 » /sysinfo»او «معلومات- show the system information
 » /update»او «ترقيه - update your bot to latest version
-» /restart «او «تنصيب - restart your bot
+» /restart «او «ريستارت - restart your bot
 » /leaveall»او «غادرالجميع - order userbot to leave from all group
 
- ⚡ 🌀 سورس فمبير @XxvprxX
+✦┅━╍━╍╍━━╍━━╍━┅✦
+ ⌯ قناة سورس سيلفا ميوزك 🎵  @SO_SELVA
 """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙رجوع", callback_data="cbcmds")]]
@@ -191,7 +193,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⌯ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .
 
-⌯ فيديو + لينك +  » » تشغيل فيديو مباشر من يوتيوب .
+⌯ فيديو + لينك + | جودة < 360 - 480- 720 >| » » تشغيل فيديو مباشر من يوتيوب .
 
 ⌯ ايقاف او انهاء » »  لايقاف التشغيل .
 
@@ -213,7 +215,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⌯ بحث » »  اي شيء تريد البحث عنه باليوتيوب .
 
-⌯ الصوت +   » »  الرقم لضبط مستوئ الصوت .
+⌯ الصوت + < رقم 1 - 200 >  » »  الرقم لضبط مستوئ الصوت .
 
 ⌯ تحديث » » لتحديث البوت و قائمة المشرفين .
 
@@ -246,8 +248,7 @@ async def cbbasic(_, query: CallbackQuery):
 ⌯ غادرالجميع  » » لمغادره الحساب المساعد لجميع جروبات .
 
 ✦┅━╍━╍╍━━╍━━╍━┅✦
- ⚡ 🌀 سورس فمبير @XxvprxX
-__""",
+⌯ قناة سورس سيلفا ميوزك 🎵  @SO_SELVA__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙رجوع", callback_data="cbcmds")]]
         ),
@@ -274,7 +275,7 @@ async def cbmenu(_, query: CallbackQuery):
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
-                      InlineKeyboardButton("🗑 اغلاق", callback_data="cls")],
+                      InlineKeyboardButton("⌯ اغلاق ⌯", callback_data="cls")],
                   ]
              ),
          )

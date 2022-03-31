@@ -172,53 +172,22 @@ async def get_uptime(client: Client, message: Message):
 
 
 
-@Client.on_message(filters.new_chat_members)
-async def new_chat(c: Client, m: Message):
-    chat_id = m.chat.id
-    if await is_served_chat(chat_id):
-        pass
-    else:
-        await add_served_chat(chat_id)
-    ass_uname = (await user.get_me()).username
-    bot_id = (await c.get_me()).id
-    for member in m.new_chat_members:
-        if member.id == bot_id:
-            return await m.reply(
-                "**شكرا  لإضافتي إلى مجموعتك 🖤**\n**[𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶](https://t.me/SO_SELVA) **\n"
-                "قم بترقيتي كمسؤول عن المجموعة لكي أتمكن من العمل بشكل صحيح\nولا تنسى كتابة `/انضم` لدعوة الحساب المساعد\nقم بكتابة`/تحديث` لتحديث قائمة المشرفين",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("⌯ قناة البوت ⌯", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("⌯ جروب البوت ⌯", url=f"https://t.me/{GROUP_SUPPORT}")
-                        ],
-                        [
-                            InlineKeyboardButton("⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"),
-                        ],
-                        [
-                            InlineKeyboardButton(
-                        "⌯ اضافه البوت اللي مجموعتك ⌯",
-                        url=f'https://t.me/{BOT_USERNAME}?startgroup=true'),
-                        ],
-                    ]
-                )
-            )
-
-
-chat_watcher_group = 5
-
-@Client.on_message(group=chat_watcher_group)
-async def chat_watcher_func(_, message: Message):
-    try:
-        userid = message.from_user.id
-    except Exception:
-        return
-    suspect = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-    if await is_gbanned_user(userid):
-        try:
-            await message.chat.ban_member(userid)
-        except Exception:
-            return
-        await message.reply_text(
-            f"👮🏼 (> {suspect} <)\n\n**Gbanned** user detected, that user has been gbanned by sudo user and was blocked from this Chat !\n\n🚫 **Reason:** potential spammer and abuser."
-        )
+@Client.on_message(command(["وامراغاني", "اوامراغاني", "اوامراغاني", "غاني", "لاوامر"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/10bfc5e7d6ab441832a65.jpg",
+        caption=f"""**⌯ ها هي الاوامر  الكامله بالعربي ⌯ \n\n✦┅━╍━╍╍━━╍━━╍━┅✦\n⌯ تشغيل + 「اسم الأغنية او / رابط」تشغيل الصوت  mp3\n\n⌯ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .\n\n⌯ فيديو + لينك +  » » تشغيل فيديو مباشر من يوتيوب .\n\n⌯ ايقاف او انهاء » »  لايقاف التشغيل .\n\n✦┅━╍━╍╍━━╍━━╍━┅✦**""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("𓆩 آݪــمــبــرمــج تيمو 𓆪", url=f"https://t.me/tt_t_4"),
+            ],
+            [
+                InlineKeyboardButton("𓆩 آݪــمــبــرمــج ݪــيدو 𓆪", url=f"https://t.me/J0KER7x"),
+            ],
+            [
+                InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+         ]
+     )
+  )

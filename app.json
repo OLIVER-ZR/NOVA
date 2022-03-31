@@ -37,7 +37,7 @@
             "required": true
         },
         "SESSION_NAME": {
-            "description": "قم بوضع كود تيرمكس هنا",
+            "description": "قم بوضع كــود بـايـروجـرام هنا",
             "required": true
         },
         "SUDO_USERS": {

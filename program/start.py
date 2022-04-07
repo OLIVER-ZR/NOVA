@@ -75,6 +75,7 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("⌯ تيمو ⌯", url=f"https://t.me/tt_t_4"),
                     InlineKeyboardButton("⌯ ليدو ⌯", url=f"https://t.me/J0KER7x"),
                 ],
+                [InlineKeyboardButton("⌯ تيتو⌯", url=f"https://t.me/XXX_xx_XXX0")],
                 [InlineKeyboardButton("⌯❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
                 [InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")],                 
                 [
@@ -112,6 +113,7 @@ async def alive(client: Client, message: Message):
                 InlineKeyboardButton("• تيمو •", url=f"https://t.me/tt_t_4"),
                 InlineKeyboardButton("• ليدو •", url=f"https://t.me/J0KER7x"),
             ],
+                [InlineKeyboardButton("• تيتو •", url=f"https://t.me/XXX_xx_XXX0"),],
                 [       
                     InlineKeyboardButton(
                         "⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"
@@ -146,6 +148,9 @@ async def help(client: Client, message: Message):
                 InlineKeyboardButton("𓆩 آݪــمــطور ليدو 𓆪", url=f"https://t.me/J0KER7x"),
             ],
             [
+                InlineKeyboardButton("𓆩 آݪــمــطور تيتو 𓆪", url=f"https://t.me/XXX_xx_XXX0"),
+            ],
+            [
                 InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
          ]
@@ -164,6 +169,7 @@ async def start(client: Client, message: Message):
                 InlineKeyboardButton("𓆩 آݪــمــطور تيمو 𓆪", url=f"https://t.me/tt_t_4"),
                 InlineKeyboardButton("𓆩 آݪــمــطور ليدو 𓆪", url=f"https://t.me/J0KER7x"),
             ],
+            [InlineKeyboardButton("𓆩 آݪــمــطور تيتو 𓆪", url=f"https://t.me/XXX_xx_XXX0"),],
             [
                 InlineKeyboardButton(
                     "⌯ 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/SO_SELVA"

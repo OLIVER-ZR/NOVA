@@ -38,6 +38,7 @@ async def cbstart(_, query: CallbackQuery):
                     InlineKeyboardButton("⌯ تيمو ⌯", url=f"https://t.me/tt_t_4"),
                     InlineKeyboardButton("⌯ ليدو ⌯", url=f"https://t.me/J0KER7x"),
                 ],
+                [InlineKeyboardButton("⌯ تيتو⌯", url=f"https://t.me/XXX_xx_XXX0")],
                 [InlineKeyboardButton("⌯❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
                 [InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")],                 
                 [

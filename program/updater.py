@@ -49,7 +49,7 @@ def updater():
     return bool(changelog)
 
 
-@Client.on_message(command(["update", "رقيه", f"update@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["update", "ترقيه", f"update@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def update_repo(_, message: Message):
     chat_id = message.chat.id

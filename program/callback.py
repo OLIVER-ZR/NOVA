@@ -35,10 +35,10 @@ async def cbstart(_, query: CallbackQuery):
                     )
                 ],
                 [
-                    InlineKeyboardButton("⌯ تيمو ⌯", url=f"https://t.me/tt_t_4"),
-                    InlineKeyboardButton("⌯ ليدو ⌯", url=f"https://t.me/J0KER7x"),
+                    InlineKeyboardButton("⌯ محمد ⌯", url=f"https://t.me/Mohmad990754"),
+                    InlineKeyboardButton("⌯ قناة السورس الاساسية ⌯", url=f"https://t.me/EITHON"),
                 ],
-                [InlineKeyboardButton("⌯ تيتو⌯", url=f"https://t.me/XXX_xx_XXX0")],
+                [InlineKeyboardButton("⌯ ميوزك ايثون ⌯", url=f"https://t.me/EITHOUSIC")],
                 [InlineKeyboardButton("⌯❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
                 [InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")],                 
                 [

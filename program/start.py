@@ -73,9 +73,9 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton("⌯ محمد ⌯", url=f"https://t.me/Mohmad990754"),
-                    InlineKeyboardButton("⌯  ⌯", url=f"https://t.me/Mohmad990754"),
+                    InlineKeyboardButton("⌯قناه السورس⌯", url=f"https://t.me/EITHON"),
                 ],
-                [InlineKeyboardButton("⌯ ", url=f"https://t.me/Mohmad990754")],
+                [InlineKeyboardButton("⌯ سورس ميوزك⌯", url=f"https://t.me/EITHOUSIC")],
                 [InlineKeyboardButton("⌯❓ طريقة التفعيل ⌯", callback_data="cbhowtouse")],
                 [InlineKeyboardButton("⌯  الاوامر بالعربي ⌯", callback_data="cbvamp")],                 
                 [

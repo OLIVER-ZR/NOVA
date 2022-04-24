@@ -1,16 +1,16 @@
 {
-    "name": "سيلفا بوتات ميوزك",
-    "description": "⿻↬──────@SO_SELVA للمعرفة تحديثات تابعوا قناتنا معرف قناتنا",
-    "logo": "https://telegra.ph/file/10bfc5e7d6ab441832a65.jpg",
+    "name": "ايثون بوتات ميوزك",
+    "description": "⿻↬──────@EITHON للمعرفة تحديثات تابعوا قناتنا معرف قناتنا",
+    "logo": "https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/SO_SELVA",
+    "website": "https://t.me/EITHON",
     "repository": "https://github.com/Mrlido99/Selvamic",
-    "success_url": "https://t.me/J0KER7x",
+    "success_url": "https://t.me/Mohmad990754",
     "env": {
         "API_ID": {
             "description": "قم بوضع الايبي ايدي هنا",
@@ -47,22 +47,22 @@
         "GROUP_SUPPORT": {
             "description": "ضع هنا يوزر جروبك بدون علامة @",
             "required": true,
-            "value": "br_selva"
+            "value": "eithonsupport"
         },
         "UPDATES_CHANNEL": {
             "description": "ضع هنا يوزر قناتك بدون علامة @",
             "required": true,
-            "value": "SO_SELVA"
+            "value": "EITHON"
         },
         "OWNER_NAME": {
             "description": "ضع هنا يوزر المطور بدون علامة @",
             "required": true,
-            "value": "tt_t_4"
+            "value": "Mohmad990754"
         },
         "ALIVE_NAME": {
             "description": "اتركها كما هي",
             "required": true,
-            "value": " 𝐒𝐄𝐋𝐕𝐀 𝐌𝐔𝐒𝐈𝐂 🎶 "
+            "value": " 𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂 🎶 "
         }
     },
     "addons": [],

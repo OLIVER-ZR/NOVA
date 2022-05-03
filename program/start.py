@@ -54,8 +54,8 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **مرحبا عزيزي ↤ {message.from_user.mention()} !**\n
-🤖 **[𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂 🎶](https://t.me/EITHON) **
-**⌯ انا بوت  استطيع تشغيل الموسيقي والفيديو في محادثتك الصوتية**
+🤖 **[ 𝗟𝗨𝗖𝗬🎶](https://t.me/EITHON) **
+**⌯ انا بوت اسمي لوسي استطيع تشغيل الموسيقي والفيديو وحمايه مجموعتك في وقت واحد**
 
 ⌯ تعلم طريقة تشغيلي واوامر التحكم بي عن طريق  » 🎵 اوامر التشغيل !
 
@@ -67,12 +67,12 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "⌯ 𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯",
+                        "⌯ 𝗟𝗨𝗖𝗬🎶 ⌯",
                         url=f"https://t.me/EITHON",
                     )
                 ],
                 [
-                    InlineKeyboardButton("⌯ محمد ⌯", url=f"https://t.me/Mohmad990754"),
+                    InlineKeyboardButton("⌯ لشراء بوت ⌯", url=f"https://t.me/Mohmad990754"),
                     InlineKeyboardButton("⌯قناه السورس⌯", url=f"https://t.me/EITHON"),
                 ],
                 [InlineKeyboardButton("⌯ سورس ميوزك⌯", url=f"https://t.me/EITHOUSIC")],
@@ -113,10 +113,10 @@ async def alive(client: Client, message: Message):
                 InlineKeyboardButton("• محمد •", url=f"https://t.me/Mohmad990754"),
                 InlineKeyboardButton("•  •", url=f"https://t.me/Mohmad990754"),
             ],
-                [InlineKeyboardButton("• •", url=f"https://t.me/Mohmad990754"),],
+                [InlineKeyboardButton("• لشراء بوت•", url=f"https://t.me/Mohmad990754"),],
                 [       
                     InlineKeyboardButton(
-                        "⌯ 𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/EITHOM"
+                        "⌯ 𝗟𝗨𝗖𝗬🎶 ⌯", url=f"https://t.me/EITHOM"
                     ),
                 ],
                 [
@@ -137,7 +137,7 @@ async def alive(client: Client, message: Message):
 @Client.on_message(command(["المطور", "طور"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
+        photo=f"https://telegra.ph/file/a3e568d88b2b9cab4a95f.jpg",
         caption=f"""**⌯ مطورين سورس ايثون ميوزك 🎵**""",
         reply_markup=InlineKeyboardMarkup(
          [
@@ -148,7 +148,7 @@ async def help(client: Client, message: Message):
                 InlineKeyboardButton("𓆩 آݪــمــطور  𓆪", url=f"https://t.me/Mohmad990754"),
             ],
             [
-                InlineKeyboardButton("𓆩 آݪــمــطور تيتو 𓆪", url=f"https://t.me/Mohmad990754"),
+                InlineKeyboardButton("𓆩 آݪــمــطور 𓆪", url=f"https://t.me/Mohmad990754"),
             ],
             [
                 InlineKeyboardButton("⌯ اضافه البوت اللي مجموعتك ⌯", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
@@ -161,18 +161,18 @@ async def help(client: Client, message: Message):
 @Client.on_message(command(["وامراغاني", f"وامر", f"لاوامراغاني", f"الاوامر", f"اغاني", f"غاني"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/aa0ad3671257edd1ddace.jpg",
+        photo=f"https://telegra.ph/file/a3e568d88b2b9cab4a95f.jpg",
         caption=f"""**⌯ ها هي الاوامر  الكامله بالعربي ⌯ \n\n✦┅━╍━╍╍━━╍━━╍━┅✦\n⌯ تشغيل + 「اسم الأغنية او / رابط」تشغيل الصوت  mp3\n\n⌯ فديو +  「اسم الفديو او / رابط الفيديو」 تشغيل الفيديو داخل المكالمة  .\n\n⌯ فيديو + لينك + | جودة < 360 - 480- 720 >| » » تشغيل فيديو مباشر من يوتيوب .\n\n⌯ ايقاف او انهاء » »  لايقاف التشغيل .\n\n⌯ وقف » » ايقاف التشغيل موقتآ  .\n\n⌯ مواصله  » »  استئناف التشغيل  .\n\n⌯ تقدم » » تخطي الئ التالي  .\n\n⌯  كتم او سكوت  » »   لكتم البوت .\n\n⌯ الغاء الكتم » »  لرفع كتم البوت  .\n\n⌯ تحكم » » تظهر لك قائمة التشغيل .\n\n⌯ تنزيل + اسم فيديو » » لتحميل فيديوهات من يوتيوب .\n\n⌯ تحميل  + اسم اغنية  » لتحميل اغاني mP3 من يوتيوب .\n\n⌯ لمعرفة المزيد من الاوامر ادخل علي البوت .\n\n✦┅━╍━╍╍━━╍━━╍━┅✦**""",
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("𓆩 آݪــمــطور تيمو 𓆪", url=f"https://t.me/Mohmad990754"),
-                InlineKeyboardButton("𓆩 آݪــمــطور ليدو 𓆪", url=f"https://t.me/Mohmad990754"),
+                InlineKeyboardButton("𓆩 آݪــمــطور محمد 𓆪", url=f"https://t.me/Mohmad990754"),
+                InlineKeyboardButton("𓆩 آݪــمــطور  𓆪", url=f"https://t.me/Mohmad990754"),
             ],
-            [InlineKeyboardButton("𓆩 آݪــمــطور تيتو 𓆪", url=f"https://t.me/Mohmad990754"),],
+            [InlineKeyboardButton("𓆩 آݪــمــطور 𓆪", url=f"https://t.me/Mohmad990754"),],
             [
                 InlineKeyboardButton(
-                    "⌯ 𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂 🎶 ⌯", url=f"https://t.me/EITHON"
+                    "⌯ 𝗟𝗨𝗖𝗬 🎶 ⌯", url=f"https://t.me/EITHON"
                 ),
             ],
             [

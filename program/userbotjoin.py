@@ -47,7 +47,7 @@ async def join_group(client, message):
 @authorized_users_only
 async def leave_one(client, message):
     try:
-        await USER.send_message(message.chat.id, "✅ الحساب المساعد غادر مجموعتك بنجاح🥺")
+        await USER.send_message(message.chat.id, "✅ تم مغادره المجموعه بنجاح🥺 لدخول ارسل انضم")
         await USER.leave_chat(message.chat.id)
     except BaseException:
         await message.reply_text(

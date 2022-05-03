@@ -60,7 +60,7 @@ def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**🎧 تم تحميل بواسطة [🎶𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂  ](https://t.me/EITHON)**"
+        rep = f"**🎧 تم تحميل بواسطة [𝗟𝗨𝗖𝗬🎶 ](https://t.me/EITHON)**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
@@ -114,7 +114,7 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
     try:
-        msg = await message.reply("**🎧 تم تحميل بواسطة [🎶 𝐄𝐈𝐓𝐇𝐎𝐍 𝐌𝐔𝐒𝐈𝐂  ](https://t.me/EITHON)**")
+        msg = await message.reply("**🎧 تم تحميل بواسطة [𝗟𝗨𝗖𝗬🎶  ](https://t.me/EITHON)**")
         with YoutubeDL(ydl_opts) as ytdl:
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
